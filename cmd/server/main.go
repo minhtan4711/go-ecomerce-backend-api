@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/go-ecomerce-backend-api/internal/routers"
+)
 
 func main() {
-	fmt.Println("Starting server...")
+	r := routers.NewRouter()
+	r.Run()
 }
