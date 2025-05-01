@@ -18,8 +18,8 @@ func NewUserController() *UserController {
 
 // controller -> service -> repo -> model -> db
 func (uc *UserController) GetUserByID(c *gin.Context) {
-	if err != nil {
-		return response.ErrorResponse(c, 20003, "no need")
-	}
-	return response.SuccessResponse(c, 20001, "success")
+	// if err != nil {
+	// 	response.ErrorResponse(c, 20003, "no need")
+	// }
+	response.SuccessResponse(c, 20001, "success")
 }
